@@ -1,5 +1,10 @@
 **Tornado Motor Demo**
 
+***Reference***
+* [Rodrigo's Boilerplate](https://github.com/RodrigoDeRosa/tornado-server-boilerplate)
+* [Tutorial: Using Motor with Tornado](https://motor.readthedocs.io/en/stable/tutorial-tornado.html)
+* [Tornado Docs](https://www.tornadoweb.org/en/stable/index.html)
+
 ***To Get Started***
 
 ```
