@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from argparse import ArgumentParser
 from tornado.web import Application
-from src.server.router import Router
+from src.server import Router
 
 
 @dataclass

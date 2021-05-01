@@ -1,4 +1,4 @@
-from src.server.server import Server
+from src.server import *
 
 
 def server():

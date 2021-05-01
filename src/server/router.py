@@ -1,4 +1,4 @@
-from src.handlers.todo_handler import TodoHandler
+from src.controllers import *
 
 
 class Router:
@@ -9,5 +9,5 @@ class Router:
 
     @classmethod
     def routes(cls):
-        """ Get routes with their respective handlers"""
+        """ Get routes with their respective controllers"""
         return [(k, v) for k, v in cls.ROUTES.items()]

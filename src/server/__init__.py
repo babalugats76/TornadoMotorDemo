@@ -1,14 +1,14 @@
 import os
 from tornado.ioloop import IOLoop
 from tornado.httpserver import HTTPServer
-from src.server.app import get_app
+from src.server.router import *
+from src.server.application import *
 
 
 class Server:
 
     @classmethod
     def start(cls):
-
         # create application and context
         context, app = get_app()
 
