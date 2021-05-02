@@ -36,13 +36,4 @@ def get_context() -> ApplicationContext:
 def get_app() -> (ApplicationContext, Application):
     """Creates application"""
     ctx: ApplicationContext = get_context()
-
-    # initialize the mongo database
-    Mongo.init(ctx.mongoUri)
-
-    # prepare settings
-    # application.settings is available to all subclasses of RequestHandler, i.e., RequestHandler.settings
-    settings = {
-        'db': Mongo.get()  # get instance of database (as specified in MONGO_URI)
-    }
-    return ctx, Application(Router.routes(), **settings)
+    return ctx, Application(Router.routes())

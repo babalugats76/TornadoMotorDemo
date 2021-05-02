@@ -19,8 +19,13 @@ class Server:
         server.bind(ctx.port)
 
         # number of processes (fork not supported on Windows!)
-        #server.start(1 if os.name == 'nt' else ctx.processes)
-        server.start(0)
+        server.start(1 if os.name == 'nt' else ctx.processes)
+
+        # initialize the mongo database
+        Mongo.init(ctx.mongoUri)
+
+        # application.settings is available to all subclasses of RequestHandler, i.e., RequestHandler.settings
+        app.settings['db'] = Mongo.get()
 
         # start the "main" IOLoop
         IOLoop.current().start()
