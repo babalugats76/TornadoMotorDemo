@@ -12,9 +12,7 @@ class Mongo:
         """Create database with asynchronous connector"""
         # Create db client
         cls.__CLIENT = MotorClient(uri)
-        print(cls.__CLIENT)
         cls.DB = cls.__CLIENT.get_default_database()
-        print(cls.DB)
 
     @classmethod
     def set(cls, db):
