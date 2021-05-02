@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 from src import server
 
 env = os.getenv("TORNADO_ENV", "production")
-print(env)
 if env == "development":
     load_dotenv()  # take environment variables from .env
 
