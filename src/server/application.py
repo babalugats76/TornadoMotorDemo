@@ -5,7 +5,6 @@ from dataclasses import dataclass
 from tornado.web import Application
 
 from src.server import Router
-from src.server import Mongo
 
 
 @dataclass
