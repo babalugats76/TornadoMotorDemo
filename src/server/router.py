@@ -5,7 +5,7 @@ class Router:
     """Application routing helper"""
     # Dictionary to map routes to Tornado RequestHandler subclasses
     ROUTES = {
-        '/http/todos/?(?P<todo_id>[^/]+)?': HttpClientHandler,
+        '/examples/http/todos/?(?P<todo_id>[^/]+)?': ExampleHttpClientHandler,
     }
 
     @classmethod

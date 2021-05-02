@@ -2,7 +2,7 @@ from tornado import escape, httpclient
 from tornado.web import RequestHandler
 
 
-class HttpClientHandler(RequestHandler):
+class ExampleHttpClientHandler(RequestHandler):
     """Example of async handler that interacts with external api"""
     __BASE_URL = "https://jsonplaceholder.typicode.com/todos/"
 
