@@ -1,1 +1,1 @@
-web: python demo.py --port=$PORT --processes=$PROCESSES
+web: python demo.py --port=$PORT --processes=0
