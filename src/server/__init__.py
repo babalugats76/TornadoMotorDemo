@@ -19,7 +19,8 @@ class Server:
         server.bind(ctx.port)
 
         # number of processes (fork not supported on Windows!)
-        server.start(1 if os.name == 'nt' else ctx.processes)
+        #server.start(1 if os.name == 'nt' else ctx.processes)
+        server.start(0)
 
         # start the "main" IOLoop
         IOLoop.current().start()
