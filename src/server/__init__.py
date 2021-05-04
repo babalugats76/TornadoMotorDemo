@@ -1,8 +1,9 @@
+import os
+
 from tornado.ioloop import IOLoop
 from tornado.httpserver import HTTPServer
-from src.server.router import *
-from src.server.mongo import *
-from src.server.application import *
+from src.server.database import Mongo
+from src.server.application import get_app
 
 
 class Server:

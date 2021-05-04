@@ -1,10 +1,10 @@
 import os
+from src.server.router import Router
 from argparse import ArgumentParser
 from dataclasses import dataclass
 
 from tornado.web import Application
 
-from src.server import Router
 
 
 @dataclass
